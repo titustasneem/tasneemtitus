@@ -13,6 +13,23 @@ html {
   height: 100%;
 }
 
+/* custom scroll bar start*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6e5a7b;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 163, 194);
+  }
+  /* custom scroll bar end*/
+  
 /* start background  */
 body {
   margin: 0;
@@ -142,3 +159,5 @@ body {
     color: black;
   }
   /* home section end  */
+
+  
