@@ -187,7 +187,7 @@ body {
   /* home section end  */
 
   /* ------------------------------------------------------------------------------- */
-  
+
 /* about section start  */
 .about .title::after {
     content: "who I am";
@@ -294,4 +294,44 @@ body {
   }
   
   /* skills section end  */
-  
+
+  /* ----------------------------------------------------------------- */
+
+  /* contact section start  */
+.contact .title::after {
+    content: "get in touch";
+  }
+  .contact .contact-content .column {
+    width: calc(50% - 30px);
+  }
+  .contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .contact .contact-content .left p {
+    text-align: justify;
+    color: #fff;
+  }
+  .contact .contact-content .left .icons {
+    margin: 10px 0;
+  }
+  .contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+  }
+  .contact .contact-content .row .info {
+    margin-left: 30px;
+  }
+  .contact .contact-content .row i {
+    font-size: 25px;
+    color: rgb(255, 133, 45);
+  }
+  .contact .contact-content .info .head {
+    font-weight: 500;
+    color: rgb(255, 133, 45)
+  }
+  .contact .contact-content .info .sub-title {
+    color:  rgb(255, 255, 255);
+  }
