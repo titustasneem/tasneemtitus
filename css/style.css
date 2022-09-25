@@ -29,7 +29,7 @@ html {
     background: rgb(64, 163, 194);
   }
   /* custom scroll bar end*/
-
+  
 /* ------------------------------------------------------------------------------- */
 
 /* start background  */
@@ -133,19 +133,29 @@ body {
     transition: all 0.3s ease;
   }
   
+  .navbar.sticky {
+    padding: 15px 0;
+    background: #000000;
+  }
   .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .navbar .name-logo a {
+  .navbar .logo a {
     color: rgb(0, 0, 0);
     font-size: 35px;
     font-weight: 600;
   }
-  .navbar .name-logo a span {
+  .navbar .logo a span {
     color: #ffffff;
     transition: all 0.3s ease;
+  }
+  .navbar.sticky .logo a span {
+    color: rgb(255, 140, 63);
+  }
+  .navbar.sticky .logo a {
+    color: #ffffff;
   }
   .navbar .menu li {
     list-style: none;
@@ -161,6 +171,9 @@ body {
   }
   .navbar .menu li a:hover {
     color: rgb(0, 0, 0);
+  }
+  .navbar.sticky .menu li a:hover {
+    color: rgb(255, 140, 63);
   }
   /* nav bar end  */
 
@@ -229,62 +242,62 @@ body {
 
 /* about section start  */
 .about .title::after {
-    content: "who I am";
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-  }
-  .about .about-content .left {
-    width: 45%;
-  }
-  .about .about-content .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-  }
-  .about .about-content .right {
-    width: 55%;
-  }
-  .about .about-content .right .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #000000;
-  }
-  .about .about-content .right .text span {
-    /* color: rgb(139, 74, 0); */
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 106, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 500;
-  }
-  .about .about-content .right p {
-    text-align: justify;
-    color: white;
-  }
-  .about .about-content .right a {
-    display: inline-block;
-    background: black;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 7px 30px;
-    margin-top: 20px;
-    border-radius: 20px;
-    border: 1px solid rgb(255, 255, 255);
-    transition: all 0.3s ease;
-  }
-  .about .about-content .right a:hover {
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-  }
+  content: "who I am";
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+.about .about-content .left {
+  width: 45%;
+}
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.about .about-content .right {
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.about .about-content .right .text span {
+  /* color: rgb(139, 74, 0); */
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 106, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+.about .about-content .right p {
+  text-align: justify;
+  color: white;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background: black;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 7px 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.about .about-content .right a:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+}
 
-  /* about section end  */
+/* about section end  */
 
 /* ------------------------------------------------------------------------ */
 
-  /* skills section start  */
+ /* skills section start  */
 .skills .title::after {
     content: "what i know";
     background: #000000;
@@ -319,7 +332,6 @@ body {
     background: white;
     border: 1px solid black;
   }
-
   .skills .skills-content .right .info {
     display: flex;
     margin-bottom: 20px;
@@ -333,7 +345,7 @@ body {
   }
   
   /* skills section end  */
-
+  
   /* ----------------------------------------------------------------- */
 
   /* contact section start  */
