@@ -110,7 +110,15 @@ body {
     pointer-events: none;
     transition: all 0.3s ease;
   }
- 
+  .scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover {
+    filter: brightness(90%);
+    color: #ffffff;
+  }
   /* scroll up & menu button end  */
 
   /* -------------------------------------------------------------------------- */
