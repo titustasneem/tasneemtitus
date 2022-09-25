@@ -365,6 +365,11 @@ body {
     overflow: hidden;
     transition: all 0.3s ease;
   }
+  .projects .carousel .card:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+  }
     /* projects section end  */
 
     /* ----------------------------------------------------------------- */
