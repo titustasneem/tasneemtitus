@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $(window).scroll(function(){
         // scroll-up button show/hide script start
         if(this.scrollY > 500){
@@ -9,6 +10,8 @@ $(document).ready(function(){
     });
         // scroll-up button show/hide script end
 
+// -----------------------------------------------------------------
+
     // slide-up script start
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -17,16 +20,22 @@ $(document).ready(function(){
     });
     // slide-up script end
 
+// -----------------------------------------------------------------
+
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
+
+// -----------------------------------------------------------------
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
+// -----------------------------------------------------------------
 
     // typing text animation script start
     var typed = new Typed(".typing", {
@@ -44,7 +53,9 @@ $(document).ready(function(){
     });
     // typing text animation script end
 
- // owl carousel script
+// -----------------------------------------------------------------
+
+ // owl carousel script start 
  $('.carousel').owlCarousel({
     margin: 20,
     loop: true,
@@ -66,6 +77,9 @@ $(document).ready(function(){
         }
     }
 });
+ // owl carousel script end 
+
+// ----------------------------------------------------------------------------------
 });
 
 
