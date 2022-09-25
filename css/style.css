@@ -387,6 +387,40 @@ body {
     font-weight: 500;
     margin: 10px 0 7px 0;
   }
+  
+  .projects .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  .projects .carousel .card:hover img {
+    border: 3px solid rgb(0, 0, 0);
+  }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0) !important;
+    transition: all 0.3s ease;
+  }
+  .owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+  }
+  .owl-dot.active,
+  .owl-dot:hover {
+    background: rgb(255, 255, 255) !important;
+  }
     /* projects section end  */
 
     /* ----------------------------------------------------------------- */

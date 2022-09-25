@@ -44,4 +44,6 @@ $(document).ready(function(){
     });
     // typing text animation script end
 
+
+
 });
