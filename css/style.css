@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
   height: 100%;
 }
-
+/* ------------------------------------------------------------------------------- */
 /* custom scroll bar start*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -29,7 +29,9 @@ html {
     background: rgb(64, 163, 194);
   }
   /* custom scroll bar end*/
-  
+
+/* ------------------------------------------------------------------------------- */
+
 /* start background  */
 body {
   margin: 0;
@@ -80,6 +82,8 @@ body {
 }
 /* end background */
 
+/* ------------------------------------------------------------------------------- */
+
 /* nav bar start  */
 .navbar {
     position: fixed;
@@ -90,7 +94,11 @@ body {
     transition: all 0.3s ease;
   }
   
-  
+  .navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .navbar .name-logo a {
     color: rgb(0, 0, 0);
     font-size: 35px;
@@ -116,6 +124,8 @@ body {
     color: rgb(0, 0, 0);
   }
   /* nav bar end  */
+
+/* ------------------------------------------------------------------------------- */
 
 /* home section start  */
   .home {
@@ -160,4 +170,4 @@ body {
   }
   /* home section end  */
 
-  
+  /* ------------------------------------------------------------------------------- */
