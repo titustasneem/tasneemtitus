@@ -343,8 +343,21 @@ body {
   }
   
   /* skills section end  */
+
   
   /* ----------------------------------------------------------------- */
+
+  /* projects section start  */
+.projects {
+    background: rgba(253, 156, 91, 0.553);
+  }
+  .projects .title::after {
+    content: "what I have worked on";
+  }
+    /* projects section end  */
+
+    /* ----------------------------------------------------------------- */
+
 
   /* contact section start  */
 .contact .title::after {
