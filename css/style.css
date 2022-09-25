@@ -128,20 +128,23 @@ body {
 /* ------------------------------------------------------------------------------- */
 
 /* home section start  */
-  .home {
+.home {
     display: flex;
+  
     height: 100vh;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Ubuntu", sans-serif;
   }
-
+  
   .home .max-width {
     width: 100%;
     display: flex;
   }
-
+  .home .max-width .row {
+    margin-right: 0;
+  }
   .home .home-content .text-1 {
     font-size: 27px;
     color: rgb(255, 255, 255);
@@ -156,6 +159,13 @@ body {
     font-size: 40px;
     margin: 5px 0;
     color: #ffffff;
+  }
+  .home .home-content .text-3 span {
+      font-size: 60px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 106, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
   }
   .home .home-content a {
     display: inline-block;
@@ -175,7 +185,6 @@ body {
     color: black;
   }
   /* home section end  */
-
   /* ------------------------------------------------------------------------------- */
 /* about section start  */
 .about .title::after {
