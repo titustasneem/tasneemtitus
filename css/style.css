@@ -335,3 +335,40 @@ body {
   .contact .contact-content .info .sub-title {
     color:  rgb(255, 255, 255);
   }
+
+  /* ------------------------ */
+.contact .right form .fields {
+    display: flex;
+  }
+  .contact .right form .field,
+  .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+    /* color: aqua; */
+  }
+  .contact .right form .name {
+    margin-right: 10px;
+    /* color: aqua; */
+  
+  }
+  .contact .right form .field input,
+  .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* contact section end  */
+  
+  /* --------------------------------------------------------------------------------------- */
