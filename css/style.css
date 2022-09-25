@@ -378,6 +378,15 @@ body {
     justify-content: center;
     transition: all 0.3s ease;
   }
+
+  .projects .carousel .card:hover .box {
+    transform: scale(1.05);
+  }
+  .projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
     /* projects section end  */
 
     /* ----------------------------------------------------------------- */
