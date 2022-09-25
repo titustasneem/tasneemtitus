@@ -354,6 +354,17 @@ body {
   .projects .title::after {
     content: "what I have worked on";
   }
+
+  .projects .carousel .card {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
     /* projects section end  */
 
     /* ----------------------------------------------------------------- */
