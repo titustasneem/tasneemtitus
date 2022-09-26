@@ -254,7 +254,7 @@ body {
   font-size: 75px;
   margin-left: -3px;
   /* background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(146, 26, 186)); */
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 rgb(255, 98, 0), -1px 1px 0 rgb(247, 0, 255), 1px 1px 0 rgb(255, 98, 0);
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 3px -3px 0 rgb(255, 98, 0), -3px 3px 0 rgb(247, 0, 255), 1px 1px 0 rgb(255, 98, 0);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
