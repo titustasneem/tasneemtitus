@@ -624,11 +624,14 @@ footer {
   text-align: center;
 }
 footer span a{
-    color: rgb(255, 113, 42);
-    text-decoration: none;
+  background: -webkit-linear-gradient(rgb(255, 118, 44), rgb(237, 32, 186));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 } 
  footer span a:hover{
     text-decoration: underline;
+    color: rgb(155, 42, 132);
 }
 
 /* footer section end  */
