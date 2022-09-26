@@ -22,21 +22,6 @@ $(document).ready(function(){
 
 // -----------------------------------------------------------------
 
-    // $('.navbar .menu li a').click(function(){
-    //     // applying again smooth scroll on menu items click
-    //     $('html').css("scrollBehavior", "smooth");
-    // });
-
-// -----------------------------------------------------------------
-
-    // toggle menu/navbar script
-    // $('.menu-btn').click(function(){
-    //     $('.navbar .menu').toggleClass("active");
-    //     $('.menu-btn i').toggleClass("active");
-    // });
-
-// -----------------------------------------------------------------
-
     // typing text animation script start
     var typed = new Typed(".typing", {
         strings: ["Front end developer", "Back end developer", "Web enthusiast", "Coder"],
