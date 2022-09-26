@@ -69,7 +69,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: rgb(231, 124, 30);
+    background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(205, 72, 189));
     transform: translateX(-50%);
 }
 section .title::after{
@@ -94,7 +94,7 @@ body {
 .background {
   animation: slide 3s ease-in-out infinite alternate;
   /* background-image: linear-gradient(-20deg, rgba(255, 150, 84, 0.815) 50%, rgb(114, 44, 113) 50%); */
-  background: -webkit-linear-gradient(-20deg ,rgba(255, 116, 42, 0.815) 50%, rgb(93, 56, 142) 50%);
+  background: -webkit-linear-gradient(-20deg ,rgba(255, 116, 42, 0.815) 50%, rgba(47, 34, 128, 0.83) 50%);
 
   bottom: 0;
   left: -100%;
@@ -441,7 +441,7 @@ body {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: rgb(231, 124, 30);
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(205, 72, 189));
   transform: translateX(-50%);
 }
 .projects .title::after {
