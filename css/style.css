@@ -69,7 +69,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: rgb(255, 255, 255);
+    background: rgb(231, 124, 30);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -310,7 +310,7 @@ body {
   /* background: rgb(255, 255, 255); */
 }
 .about .title::after {
-  content: "who I am";
+  content: "Who I am";
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
@@ -371,7 +371,7 @@ body {
   background: #000;
 } */
 .skills .title::after {
-  content: "what i know";
+  content: "What I know";
   background: #ffffff;
   color: rgb(0, 0, 0);
 }
@@ -422,6 +422,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   color:  rgb(0, 0, 0);
+
 }
 
 
@@ -430,11 +431,27 @@ body {
 /* ---------------------------------------------------------------------------------- */
 
 /* projects section start  */
-.projects {
+ .projects {
   background: rgb(0, 0, 0);
+} 
+.projects .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: rgb(231, 124, 30);
+  transform: translateX(-50%);
 }
 .projects .title::after {
-  content: "who with me";
+  content: 'My work';
+}
+
+
+.projects .title {
+  content: "Projects I have worked on";
+  color: #ffffff;
 }
 .projects .carousel .card {
   background: rgb(255, 255, 255);
@@ -511,7 +528,7 @@ body {
 
 /* contact section start  */
 .contact .title::after {
-  content: "get in touch";
+  content: "Get in touch";
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
