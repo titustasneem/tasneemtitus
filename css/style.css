@@ -537,11 +537,11 @@ body {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: rgb(255, 133, 45);
+  color: rgb(0, 0, 0);
 }
 .contact .contact-content .info .head {
   font-weight: 700;
-  color: rgb(255, 133, 45)
+  color: rgb(0, 0, 0)
 }
 .contact .contact-content .info .sub-title {
   color:  rgb(255, 255, 255);
