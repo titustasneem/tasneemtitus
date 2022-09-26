@@ -22,8 +22,6 @@ html {
   background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  /* font-weight: 500; */
-
   border: 1px solid  rgb(0, 0, 0);
   color: black;
   background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));  
@@ -59,7 +57,7 @@ section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
@@ -71,7 +69,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: rgb(255, 255, 255);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -79,9 +77,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 0 5px;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     transform: translateX(-50%);
 }
 /* all similar content styling end*/
@@ -95,7 +93,9 @@ body {
 
 .background {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-20deg, rgba(255, 150, 84, 0.815) 50%, rgb(114, 44, 113) 50%);
+  /* background-image: linear-gradient(-20deg, rgba(255, 150, 84, 0.815) 50%, rgb(114, 44, 113) 50%); */
+  background: -webkit-linear-gradient(-20deg ,rgba(255, 116, 42, 0.815) 50%, rgb(93, 56, 142) 50%);
+
   bottom: 0;
   left: -100%;
   opacity: 0.5;
@@ -153,7 +153,6 @@ body {
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  /* color: rgb(255, 255, 255); */
   z-index: 9999;
   font-size: 30px;
   border: 1px solid rgb(255, 255, 255);
@@ -171,8 +170,8 @@ body {
 }
 .scroll-up-btn:hover {
   filter: brightness(90%);
-  font-weight: 500;
-  border: 1px solid  rgb(0, 0, 0);
+  /* font-weight: 700; */
+  /* border: 1px solid  rgb(0, 0, 0); */
   color: black;
   background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));
 }
@@ -200,7 +199,7 @@ body {
 .navbar .logo a {
   color: rgb(255, 255, 255);
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .navbar .logo a span {
   background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
@@ -216,7 +215,7 @@ body {
   display: block;
   color: white;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: 25px;
   transition: color 0.3s ease;
 }
@@ -259,7 +258,7 @@ body {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 .home .home-content .text-3 {
   font-size: 40px;
@@ -273,7 +272,7 @@ body {
   -webkit-text-fill-color: transparent;
   /* border: 5px solid #000000; */
 
-  font-weight: 500;
+  font-weight: 700;
 }
 .home .home-content a {
   display: inline-block;
@@ -282,14 +281,14 @@ body {
   font-size: 25px;
   padding: 7px 30px;
   margin-top: 20px;
-  font-weight: 400;
+  font-weight: 700;
   border-radius: 20px;
   border: 1px solid rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
     /* background:  rgb(255, 255, 255) ; */
-    font-weight: 500;
+    font-weight: 700;
 
   border: 1px solid  rgb(0, 0, 0);
   color: black;
@@ -302,10 +301,18 @@ body {
 /* ----------------------------------------------------------------------------------------- */
 
 /* about section start  */
+.about{
+     background:rgb(0, 0, 0); 
+}
+.about .title {
+  /* content: "About me"; */
+  color: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
+}
 .about .title::after {
   content: "who I am";
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 .about .about-content .left {
   width: 45%;
@@ -321,16 +328,16 @@ body {
 }
 .about .about-content .right .text {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 .about .about-content .right .text span {
   /* color: rgb(139, 74, 0); */
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 106, 0));
+  background: -webkit-linear-gradient(rgb(255, 118, 44), rgb(237, 32, 186));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 .about .about-content .right p {
   text-align: justify;
@@ -338,22 +345,21 @@ body {
 }
 .about .about-content .right a {
   display: inline-block;
-  background: black;
-  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 7px 30px;
   margin-top: 20px;
   border-radius: 20px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  border: 1px solid  rgb(0, 0, 0);
-  font-weight: 500;
-
-  color: black;
-  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(155, 12, 138));
+  /* border: 1px solid  rgb(0, 0, 0); */
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(255, 116, 42), rgb(155, 12, 138));
 }
 
 /* about section end  */
@@ -361,18 +367,26 @@ body {
 /* --------------------------------------------------------------------------------------- */
 
 /* skills section start  */
+/* .skills{
+  background: #000;
+} */
 .skills .title::after {
   content: "what i know";
-  background: #000000;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
 .skills .skills-content .left .text {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 .skills .skills-content .left p {
   text-align: justify;
@@ -381,20 +395,20 @@ body {
 .skills .skills-content .left a {
   display: inline-block;
   background: rgb(0, 0, 0);
-  color: #fff;
+  color: rgb(255, 247, 247);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 20px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-  font-weight: 500;
+  font-weight: 700;
 
-  border: 1px solid  rgb(0, 0, 0);
-  color: black;
+  border: 1px solid  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(155, 12, 138));
 }
 
@@ -405,7 +419,7 @@ body {
   justify-content: space-between;
 }
 .skills .skills-content .right span {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   color:  rgb(0, 0, 0);
 }
@@ -416,27 +430,28 @@ body {
 
 /* projects section start  */
 .projects {
-  background: rgba(253, 156, 91, 0.553);
+  background: rgb(0, 0, 0);
 }
 .projects .title::after {
   content: "who with me";
 }
 .projects .carousel .card {
-  background: rgb(0, 0, 0);
-  color: #fff;
-  border: 2px solid white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  /* border: 2px solid rgb(255, 68, 0); */
   border-radius: 20px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+ 
 }
 .projects .carousel .card:hover {
-  font-weight: 500;
+  font-weight: 700;
 
   border: 1px solid  rgb(0, 0, 0);
   color: black;
-  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(205, 72, 189));
 }
 
 .projects .carousel .card .box {
@@ -445,13 +460,15 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+
 }
 .projects .carousel .card:hover .box {
   transform: scale(1.05);
+
 }
 .projects .carousel .card .text {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0 7px 0;
 }
 .projects .carousel .card img {
@@ -459,12 +476,13 @@ body {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid rgb(255, 255, 255);
+  /* border: 2px solid rgb(255, 255, 255); */
   transition: all 0.3s ease;
+  border: 4px solid rgb(0, 0, 0);
 }
-.projects .carousel .card:hover img {
-  border: 3px solid rgb(0, 0, 0);
-}
+ .projects .carousel .card:hover img {
+  border: 3px solid rgb(255, 255, 255);
+} 
 .owl-dots {
   text-align: center;
   margin-top: 20px;
@@ -475,7 +493,7 @@ body {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid rgb(0, 0, 0) !important;
+  border: 2px solid rgb(255, 255, 255) !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
@@ -499,7 +517,7 @@ body {
 }
 .contact .contact-content .text {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .contact .contact-content .left p {
@@ -522,7 +540,7 @@ body {
   color: rgb(255, 133, 45);
 }
 .contact .contact-content .info .head {
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(255, 133, 45)
 }
 .contact .contact-content .info .sub-title {
@@ -577,7 +595,7 @@ body {
   height: 45px;
   outline: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
@@ -587,7 +605,7 @@ body {
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  font-weight: 500;
+  font-weight: 700;
 
   border: 1px solid  rgb(0, 0, 0);
   color: black;
