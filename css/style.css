@@ -182,10 +182,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.navbar.sticky {
-  padding: 15px 0;
-  background: #000000;
-}
+
 .navbar .max-width {
   display: flex;
   align-items: center;
@@ -200,12 +197,7 @@ body {
   color: #ffffff;
   transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span {
-  color: rgb(255, 140, 63);
-}
-.navbar.sticky .logo a {
-  color: #e70f0f;
-}
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -221,9 +213,7 @@ body {
 .navbar .menu li a:hover {
   color: rgb(0, 0, 0);
 }
-.navbar.sticky .menu li a:hover {
-  color: rgb(23, 174, 58);
-}
+
 /* nav bar end  */
 
 /* ------------------------------------------------------------------------------- */
