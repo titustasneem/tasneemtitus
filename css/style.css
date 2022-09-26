@@ -22,11 +22,14 @@ html {
   background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #6e5a7b;
-  
+  /* font-weight: 500; */
+
+  border: 1px solid  rgb(0, 0, 0);
+  color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));  
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(64, 163, 194);
+  background: rgb(0, 0, 0);
 }
 /* custom scroll bar end*/
 
@@ -92,7 +95,7 @@ body {
 
 .background {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-20deg, rgb(0, 0, 0) 50%, rgb(255, 140, 63) 50%);
+  background-image: linear-gradient(-20deg, rgba(255, 150, 84, 0.815) 50%, rgb(114, 44, 113) 50%);
   bottom: 0;
   left: -100%;
   opacity: 0.5;
@@ -144,14 +147,16 @@ body {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #4b2656;
+  color: #ffffff;
+  background: #000000;
   right: 30px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color: rgba(0, 0, 0, 0.415);
+  /* color: rgb(255, 255, 255); */
   z-index: 9999;
   font-size: 30px;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 6px;
   border-bottom-width: 2px;
   cursor: pointer;
@@ -166,7 +171,10 @@ body {
 }
 .scroll-up-btn:hover {
   filter: brightness(90%);
-  color: #ffffff;
+  font-weight: 500;
+  border: 1px solid  rgb(0, 0, 0);
+  color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));
 }
 /* scroll up & menu button end  */
 
@@ -177,9 +185,10 @@ body {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 10px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
+  background-color: #000000;
 }
 
 
@@ -189,13 +198,14 @@ body {
   justify-content: space-between;
 }
 .navbar .logo a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 35px;
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: #ffffff;
-  transition: all 0.3s ease;
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  transition: all 0.3s ease;
 }
 
 .navbar .menu li {
@@ -211,8 +221,9 @@ body {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: rgb(0, 0, 0);
-}
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
 
 /* nav bar end  */
 
@@ -238,24 +249,30 @@ body {
 }
 .home .home-content .text-1 {
   font-size: 27px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .home .home-content .text-2 {
   font-size: 75px;
-  font-weight: 600;
   margin-left: -3px;
-  color: rgb(0, 0, 0);
+  /* background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(146, 26, 186)); */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 rgb(255, 98, 0), -1px 1px 0 rgb(247, 0, 255), 1px 1px 0 rgb(255, 98, 0);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
 }
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
-  color: #ffffff;
+  color: #000000;
 }
 .home .home-content .text-3 span {
     font-size: 60px;
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 106, 0));
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* border: 5px solid #000000; */
+
   font-weight: 500;
 }
 .home .home-content a {
@@ -271,9 +288,14 @@ body {
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-    background:  rgb(255, 255, 255) ;
+    /* background:  rgb(255, 255, 255) ; */
+    font-weight: 500;
+
   border: 1px solid  rgb(0, 0, 0);
   color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(155, 12, 138));
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 /* home section end  */
 
@@ -327,9 +349,11 @@ body {
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: rgb(0, 0, 0);
-  background: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid  rgb(0, 0, 0);
+  font-weight: 500;
+
+  color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(155, 12, 138));
 }
 
 /* about section end  */
@@ -367,9 +391,11 @@ body {
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-  color: rgb(0, 0, 0);
-  background: white;
-  border: 1px solid black;
+  font-weight: 500;
+
+  border: 1px solid  rgb(0, 0, 0);
+  color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(155, 12, 138));
 }
 
 .skills .skills-content .right .info {
@@ -406,9 +432,11 @@ body {
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(0, 0, 0);
+  font-weight: 500;
+
+  border: 1px solid  rgb(0, 0, 0);
+  color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));
 }
 
 .projects .carousel .card .box {
@@ -559,9 +587,11 @@ body {
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: rgb(0, 0, 0);
-  background: white;
-  border: 2px solid black;
+  font-weight: 500;
+
+  border: 1px solid  rgb(0, 0, 0);
+  color: black;
+  background: -webkit-linear-gradient(rgb(255, 116, 42), rgb(142, 56, 132));
 }
 /* contact section end  */
 
