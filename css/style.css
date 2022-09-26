@@ -204,7 +204,7 @@ body {
   color: rgb(255, 140, 63);
 }
 .navbar.sticky .logo a {
-  color: #ffffff;
+  color: #e70f0f;
 }
 .navbar .menu li {
   list-style: none;
@@ -222,7 +222,7 @@ body {
   color: rgb(0, 0, 0);
 }
 .navbar.sticky .menu li a:hover {
-  color: rgb(255, 140, 63);
+  color: rgb(23, 174, 58);
 }
 /* nav bar end  */
 
