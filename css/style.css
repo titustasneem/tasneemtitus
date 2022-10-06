@@ -1,219 +1,26 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .container{
-  border: 3px solid green;
   display: grid;
-  grid-template-columns: 1fr;
-   grid-template-rows: 200px 200px 200px 200px 200px 200px 200px; 
-   grid-gap: 3px; 
-  
-    grid-template-areas: 
-  'header'
-  'homeContainer'
-  'aboutContainer'
-  'skillsContainer'
-  'projectsContainer'
-  'contactsContainer'
-  'footerContainer';  
-  overflow: hidden;
+  height: 100vh;
 }
 
-  header{
-  border: 3px solid purple;
-  grid-area: header;
-  background: violet;
-  overflow: hidden;
-} 
-
-/* #homeContainer{
-  border: 3px solid blue;
-  grid-area: homeContainer;
-  background: lightblue;
-}
-
-#aboutContainer{
-  border: 3px solid yellow;
-  grid-area: aboutContainer;
-  background: lightgoldenrodyellow;
-}
-
-#skillsContainer{
-  border: 3px solid peru;
-  grid-area: skillsContainer;
-  background: lightsalmon;
+nav{
 
 }
-
-#projectsContainer{
-  border: 3px solid magenta;
-  grid-area: projectsContainer;
-  background: lightpink;
+main{
 
 }
-
-#contactsContainer{
-  border: 3px solid red;
-  grid-area: contactsContainer;
-  background: rosybrown;
-}
-
-#footerContainer{
-  border: 3px solid black;
-  grid-area: footerContainer;
-  background: grey;
-}    */
-
-/* ----------------------------------------------------------------------------- */
-li{
-  list-style: none;
-}
-
-.navbar {
-  display: grid;
-  /* background: #000000; */
-  grid-template-columns: 6fr 6fr;
-   /* position: fixed; */
-  width: 100%;
-  height: 100px;
-  margin: auto;
-  align-items: center;
-  /* z-index: 999; */
-  /* padding: 10px 0; */
-  /* font-family: "Ubuntu", sans-serif; */
-  /* transition: all 0.3s ease;  */
-}
-
-/* .navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-.navbar .logo a{
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  text-align: center;
-  font-weight: 700;
-  /* width: 100%; */
+.aboutContainer{
 
 }
-
- /* .navbar .logo a {
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  font-weight: 700;
-  text-align: center;
-}  */
-
- .navbar .logo a span {
-   /* width: 100%; */
-  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease;
-}  
-
-.navbar .menu{
-  display: flex;
-}
-.navbar .menu li {
-  list-style: none;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: inline-block;
-}
-
- .navbar .menu li a {
-   text-decoration: none;
-   padding: 28px;
-   color: white;
-   transition: .5s all ease;
-
-  /* display: block;
-  font-size: 18px;
-  font-weight: 700;
-  margin-left: 25px;
-  transition: color 0.3s ease; */
-} 
-
- .navbar .menu li a:hover {
-   
-   color: pink; 
-   background: #114c6c;
-   /* -webkit-background-clip: text; 
-   -webkit-text-fill-color: transparent;  */
-  cursor: pointer;
-} 
-
- /* .navbar .menu li a:active{
-  background: red;
-}  */
-
-/* .navbar.sticky .logo a span {
-  color: rgb(255, 140, 63);
-} */
-
-/* .navbar.sticky .logo a {
-  color: #ffffff;
-} */
-
-/* .navbar.sticky {
-  padding: 15px 0;
-  background: #000000;
-} */
-
-.hamBurgerIcon {
-  color: white;
-  font-size: 30px;
-  display: none;
-  cursor: pointer;
+.skillsContainer{
 
 }
+.projectsContainer{
 
-#hamBurgerMenu{
-  display: none;
 }
+.contactsContainer{
 
-@media(max-width: 960px) {
-  .hamBurgerIcon{
-    display: block;
-    /* z-index: 10; */
-  }
-  .navbar .menu{
-    display: grid;
-    position: fixed;
-    top: 120px;
-    height: 100vh;
-    background: rgb(40, 30, 30);
-    width: 100%;
-    left: -100%;
-    font-size: 17px;
-    transition: .5s all ease;
-    text-align: center;
-    padding-top: 30px;
-    /* overflow: hidden; */
-  }
-  .navbar .menu li a{
-    color: rgb(6, 197, 244);
-  }
-  .navbar .menu li a:hover{
-    color: rgb(53, 3, 255);
-    background-color: yellow;
-  }
-  #hamBurgerMenu:checked~.menu{
-    left: 0;
-  }
-  
-  /* #hamBurgerMenu:checked~.hamBurgerIcon i{
-    margin: 500px;
-  } */
-  #hamBurgerMenu:checked~.hamBurgerIcon i::before{
-    content: '\f00d';
-    /* left: 50%; */
-  }
-  
+}
+footer{
+
 }
