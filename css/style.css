@@ -1,37 +1,83 @@
+:root{
+  --main-radius:5px;
+  --main-padding:5px;
+}
+
 .container{
   display: grid;
   height: 100vh;
   grid-template-areas: 
-  'nav' 'nav nav'
-  'main' 'main' 'main'
-  'aboutContainer' 'aboutContainer' 'aboutContainer'
-  'skillsContainer' 'skillsContainer' 'skillsContainer'
-  'projectsContainer' 'projectsContainer' 'projectsContainer'
-  'contactsContainer' 'contactsContainer' 'contactsContainer'
-  'footer' 'footer' 'footer';
-  grid-template-columns: 1fr 1fr 1fr;
+  'nav'
+  'main'
+  'aboutContainer' 
+  'skillsContainer'
+  'projectsContainer'
+  'contactsContainer' 
+  'footer';
+  grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 0.5fr;
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
 }
 
 nav{
 background: palevioletred;
+grid-area: nav;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
 main{
 background: lightgreen;
+grid-area: main;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
 #aboutContainer{
 background: paleturquoise;
+grid-area: aboutContainer;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
 #skillsContainer{
   background: lightsalmon;
+  grid-area: skillsContainer;
+  border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
 #projectsContainer{
 background: gray;
+grid-area: projectsContainer;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
 #contactsContainer{
 background: burlywood;
+grid-area: contactsContainer;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
 footer{
 background: plum;
+grid-area: footer;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
 }
-/* ------------------------------------------------
+/* ------------------------------------------------*/
+
+@media only screen and (min-width: 550px) {
+  .container{
+    grid-template-areas: 
+    'nav'
+    'main'
+    'aboutContainer' 
+    'skillsContainer'
+    'projectsContainer'
+    'contactsContainer' 
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4 0.5fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+  }
+ }
