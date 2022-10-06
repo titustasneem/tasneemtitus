@@ -4,23 +4,23 @@
 }
 
 nav{
-
+background: palevioletred;
 }
 main{
-
+background: lightgreen;
 }
-.aboutContainer{
-
+#aboutContainer{
+background: paleturquoise;
 }
-.skillsContainer{
-
+#skillsContainer{
+  background: lightsalmon;
 }
-.projectsContainer{
-
+#projectsContainer{
+background: gray;
 }
-.contactsContainer{
-
+#contactsContainer{
+background: burlywood;
 }
 footer{
-
+background: plum;
 }
