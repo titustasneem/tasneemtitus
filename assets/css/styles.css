@@ -321,15 +321,25 @@ img {
   background-color: transparent;
 }
 /* ==============================ABOUT SECTION=============================== */
+#about{
+  background-color: #000000;
+}
+.about .section__title,.about .section__subtitle {
+  color: white;
+}
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  color: white;
 }
 
 .about__buttons {
   display: flex;
   justify-content: center;
 }
+.about__buttons .button__icon:hover,.about__buttons .button--flex:hover {
+  color: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));}
 
 /* ==============================SKILLS SECTION=============================== */
 .skills__container {
@@ -350,7 +360,9 @@ img {
 .skills__content:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   color: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
 }
+
 
 .skills__icon {
   display: block;
@@ -383,7 +395,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.302);
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(155, 12, 138));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -441,14 +453,9 @@ img {
 
 /* ============================== PROJECTS SECTION =============================== */
 
-.projects {
-  background: -webkit-linear-gradient(rgb(107, 60, 127), rgb(0, 0, 0));
-  background: black;
-}
-
 .projects .carousel .card {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 25px 35px;
   text-align: center;
@@ -530,6 +537,7 @@ img {
   margin-right: 12px;
 }
 
+
 .contact__title {
   font-size: var(--h3-font-size);
   font-weight: 500;
@@ -542,28 +550,8 @@ img {
   font-weight: 600;
 }
 
-.contact__content {
-  background-color: white;
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem 0.25rem;
-}
-
-.contact__label {
-  font-size: var(--smaller-font-size);
-  color: black;
-  font-weight: 600;
-}
-
-.contact__input {
-  width: 100%;
-  background-color: white;
-  color: black;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  font-weight: 400;
-  border: none;
-  outline: none;
-  padding: 0.25rem 0.5rem 0.5rem 0;
+.contact__form .button--flex:hover, .contact__form .button__icon:hover {
+  background: -webkit-linear-gradient(rgb(255, 89, 0), rgb(205, 72, 189));
 }
 
 /* ================ FOOTER ==================== */
@@ -817,7 +805,5 @@ img {
   .contact__form {
     width: 460px;
   }
-  .contact__inputs {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
